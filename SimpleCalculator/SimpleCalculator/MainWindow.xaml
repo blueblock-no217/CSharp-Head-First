@@ -1,0 +1,34 @@
+﻿<Window x:Class="SimpleCalculator.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:SimpleCalculator"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="72*"/>
+            <RowDefinition Height="72*"/>
+            <RowDefinition Height="72*"/>
+            <RowDefinition Height="217*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <TextBlock x:Name="DisplayValue" HorizontalAlignment="Center" TextWrapping="Wrap" Text="DisplayValue" VerticalAlignment="Center" FontSize="20" Grid.Row="1" Height="27" Width="112"/>
+        <Button Grid.Column="1" Content=" 1 " HorizontalAlignment="Left" Margin="25,0,0,0" VerticalAlignment="Center" FontSize="30" Height="44" Width="37" Click="Button_Click"/>
+        <Button Grid.Column="1" Content=" 2 " HorizontalAlignment="Left" Margin="100,0,0,0" VerticalAlignment="Center" FontSize="30" RenderTransformOrigin="0.504,0.547" Height="43" Width="37"/>
+        <Button Grid.Column="1" Content=" 3 " HorizontalAlignment="Left" Margin="175,0,0,0" VerticalAlignment="Center" FontSize="30" Height="43" Width="37"/>
+        <Button Grid.Column="1" Content=" 4 " HorizontalAlignment="Left" Margin="25,10,0,0" Grid.Row="1" VerticalAlignment="Top" FontSize="30"/>
+        <Button Grid.Column="1" Content=" 5 " HorizontalAlignment="Left" Margin="100,10,0,0" Grid.Row="1" VerticalAlignment="Top" FontSize="30"/>
+        <Button Grid.Column="1" Content=" 6 " HorizontalAlignment="Left" Margin="175,10,0,0" Grid.Row="1" VerticalAlignment="Top" FontSize="30"/>
+        <Button Grid.Column="1" Content=" 7 " HorizontalAlignment="Left" Margin="25,10,0,0" Grid.Row="2" VerticalAlignment="Top" FontSize="30"/>
+        <Button Grid.Column="1" Content=" 8 " HorizontalAlignment="Left" Margin="100,10,0,0" Grid.Row="2" VerticalAlignment="Top" FontSize="30"/>
+        <Button Grid.Column="1" Content=" 9 " HorizontalAlignment="Left" Margin="175,10,0,0" Grid.Row="2" VerticalAlignment="Top" FontSize="30"/>
+        <Button x:Name="Addition" Grid.Column="1" Content=" + " HorizontalAlignment="Left" Margin="25,46,0,0" Grid.Row="3" VerticalAlignment="Top" FontSize="30"/>
+        <Button x:Name="Calculate" Grid.Column="1" Content=" = " HorizontalAlignment="Left" Margin="25,124,0,0" Grid.Row="3" VerticalAlignment="Top" FontSize="30"/>
+
+    </Grid>
+</Window>
