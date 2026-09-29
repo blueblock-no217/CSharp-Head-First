@@ -20,5 +20,20 @@ namespace PickACardUI
         {
             InitializeComponent();
         }
+
+        // Runs when the button is pressed
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            // created an array of strings using the card picker class member
+            string[] pickedCards = CardPicker.PickSomeCards((int)numberOfCards.Value);
+            // Ensure the list is empty
+            listOfCards.Items.Clear();
+
+            // Add the cards to the list box 
+            foreach(string card in pickedCards)
+            {
+                listOfCards.Items.Add(card);
+            }
+        }
     }
 }
